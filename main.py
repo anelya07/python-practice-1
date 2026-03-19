@@ -20,7 +20,7 @@ print(f"Quantity: {quantity}")
 print("-" * 30)
 subtotal = price * quantity
 
-if subtotal>5000:
+if subtotal > 5000:
     print(f"Subtotal: {subtotal}" + " KZT")
     discount = subtotal * 0.1
     total = subtotal - discount
@@ -29,6 +29,10 @@ if subtotal>5000:
 else:
     print(f"Total: {subtotal}" + " KZT")
 
+# d)
+print("-" * 30)
+print("Discount applied: ", subtotal > 5000)
+print("Paid more than 3000: ", total > 3000)
 print("=" * 30)
 
 
